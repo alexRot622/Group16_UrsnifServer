@@ -44,7 +44,6 @@ class C2Handler(BaseHTTPRequestHandler):
 
         if self.path.endswith(".avi"):
             print(self.decode_payload(self.path))
-        #data = self.rfile.read(int(self.headers.getHeader()))
 
 class C2Server():
     def __init__(self, host, port):
